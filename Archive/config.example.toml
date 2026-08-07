@@ -1,0 +1,55 @@
+# Two-letter uppercase chart region. ZZ means unspecified.
+# Default: ZZ
+region = "ZZ"
+
+[playback]
+# Target output volume. Valid range: 0-100. Default: 80
+volume = 80
+# Fade duration in milliseconds. Valid range: 0-10000. Default: 250
+fade_in_ms = 250
+# Fade duration in milliseconds. Valid range: 0-10000. Default: 250
+fade_out_ms = 250
+
+[podcast]
+# Playback multiplier. Valid range: 0.5-3.0. Default: 1.0
+speed = 1.0
+# Replay interval in seconds. Valid range: 1-600. Default: 15
+skip_backward_seconds = 15
+# Forward skip interval in seconds. Valid range: 1-600. Default: 30
+skip_forward_seconds = 30
+
+[behavior]
+# Resolved-stream cache lifetime in seconds. Valid range: 0-300. Default: 60
+resolver_cache_seconds = 60
+# Restore the last queue and playback position. Default: true
+resume_session = true
+# Skip unavailable queue entries automatically. Default: false
+auto_skip_unavailable = false
+
+[lyrics]
+# Retrieve and present lyrics when available. Default: true
+enabled = true
+# Allow bounded track metadata to be sent to an external synchronization source. Default: true
+external_sync = true
+
+[artwork]
+# Render genuine video-backed animation when available. Default: true
+animated = true
+# Maximum animation frame rate. Valid range: 1-15. Default: 8
+max_fps = 8
+
+[visualizer]
+# Render a genuine sound-reactive spectrum in the player. Default: true
+enabled = true
+# Maximum spectrum frame rate. Valid range: 1-30. Default: 15
+max_fps = 15
+
+[notifications]
+# Show native now-playing notifications. Default: true
+# Failures never block playback, including setup, artwork, timeout, and platform failures.
+# Private artwork leftovers are pruned at every TUI startup, even when disabled.
+enabled = true
+# Optional Windows AppUserModelID already registered by your installer.
+# Windows notifications are text-only; without this value they are unavailable.
+# Ytermusic does not register or mutate an AppUserModelID (no registry or PowerShell changes).
+# windows_aum_id = "ExampleCompany.Ytermusic"

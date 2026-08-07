@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.12.0.schema.json
+# TEMPLATE ONLY: release automation validates this manifest set before publication.
+PackageIdentifier: Ytermusic.Ytermusic
+PackageVersion: 0.1.0
+DefaultLocale: en-US
+ManifestType: version
+ManifestVersion: 1.12.0

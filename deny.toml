@@ -1,0 +1,53 @@
+# Dependency policy for `cargo deny --config deny.toml check`.
+
+[graph]
+all-features = true
+
+[advisories]
+# Vulnerability, unsoundness, unmaintained, and notice advisories are denied by
+# current cargo-deny releases unless a specific advisory is listed here.
+yanked = "deny"
+ignore = []
+
+[licenses]
+include-dev = true
+unused-allowed-license = "deny"
+confidence-threshold = 0.8
+allow = [
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    # Required by the locked webpki root certificate data used by rustls.
+    "CDLA-Permissive-2.0",
+    "ISC",
+    "MIT",
+    "MPL-2.0",
+    "Unicode-3.0",
+    "Unicode-DFS-2016",
+    "Zlib",
+]
+exceptions = [
+    # `terminfo` is the only locked crate that requires WTFPL. Keep this
+    # exception version-scoped instead of allowing WTFPL for future crates.
+    { allow = ["WTFPL"], crate = "terminfo@0.9.0" },
+]
+
+[licenses.private]
+ignore = false
+registries = []
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+highlight = "all"
+allow = []
+deny = []
+skip = []
+skip-tree = []
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

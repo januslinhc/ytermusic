@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+# TEMPLATE ONLY: release automation validates this manifest set before publication.
+PackageIdentifier: Ytermusic.Ytermusic
+PackageVersion: 0.1.0
+PackageLocale: en-US
+Publisher: Ytermusic contributors
+PackageName: Ytermusic
+License: MIT
+ShortDescription: Keyboard-first YouTube Music terminal player
+Description: Unofficial stream-only terminal client for music, charts, podcasts, queues, radio, and fades.
+Tags:
+  - music
+  - podcast
+  - terminal
+  - tui
+  - youtube-music
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

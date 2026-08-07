@@ -1,0 +1,6 @@
+{"request_id":17,"error":"success","data":{"value":"invented"}}
+{"event":"property-change","id":4,"name":"time-pos","data":12.5}
+{"event":"file-loaded"}
+{"event":"end-file","reason":"error","file_error":"invented current failure","error":"invented legacy failure"}
+{"event":"shutdown"}
+{"event":"future-invented-event","opaque":"discard me"}

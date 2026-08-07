@@ -1,0 +1,14 @@
+---
+source: tests/ui.rs
+expression: terminal.backend().to_string()
+---
+"╔[*] ▶ Search══════════════════════════╗"
+"║Query: night coding  ·  Filter: Songs ║"
+"║                                      ║"
+"║▶ 月明かり écho 👩‍💻 — a title long eno…║" Hidden by multi-width symbols: [(4, " "), (6, " "), (8, " "), (10, " "), (18, " ")]
+"║                                      ║"
+"║                                      ║"
+"║                                      ║"
+"║                                      ║"
+"╚══════════════════════════════════════╝"
+"❚❚ 月明かり/Termin 1:13/4:05 v80/80· s-e" Hidden by multi-width symbols: [(4, " "), (6, " "), (8, " "), (10, " ")]
