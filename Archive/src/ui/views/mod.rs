@@ -1,9 +1,0 @@
-pub mod charts;
-pub mod favorites;
-pub mod history;
-pub mod home;
-pub mod library;
-pub mod podcasts;
-pub mod queue;
-pub mod search;
-pub mod settings;
