@@ -7,6 +7,25 @@ Rust. It searches and streams music, browses country-specific trending charts,
 resumes podcasts, manages a sequential or shuffled queue, runs endless radio,
 and smooths playback transitions with configurable fade-in and fade-out.
 
+## Installation
+
+You can install Ytermusic on macOS and Linux using [Homebrew](https://brew.sh).
+
+### macOS / Linux via Homebrew
+
+Run the following commands in your terminal to tap the repository, trust the source, and install the player along with all its runtime dependencies:
+
+```bash
+# 1. Tap the repository
+brew tap januslinhc/homebrew-tap
+
+# 2. Trust the tap (Required by Homebrew for third-party formulas)
+brew trust januslinhc/tap
+
+# 3. Install Ytermusic
+brew install ytermusic
+```
+
 ## Anonymous quick start
 
 An account is optional. After installing the playback dependencies and
