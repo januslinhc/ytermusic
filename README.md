@@ -1,5 +1,7 @@
 # Ytermusic
 
+![Screenshot](https://raw.githubusercontent.com/januslinhc/ytermusic/refs/heads/master/screenshot.gif)
+
 Ytermusic is a keyboard-first YouTube Music player for the terminal, written in
 Rust. It searches and streams music, browses country-specific trending charts,
 resumes podcasts, manages a sequential or shuffled queue, runs endless radio,
